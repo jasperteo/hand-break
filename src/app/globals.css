@@ -1,21 +1,83 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-*: initial;
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 240 20% 99%;
+    --foreground: 210 13% 13%;
+    --card: 240 20% 98%;
+    --card-foreground: 210 13% 13%;
+    --popover: 240 20% 98%;
+    --popover-foreground: 210 13% 13%;
+    --muted: 230 11% 89%;
+    --muted-foreground: 210 13% 13%;
+    --accent: 240 11% 95%;
+    --accent-foreground: 210 13% 13%;
+    --primary: 226 70% 55%;
+    --primary-foreground: 0 0% 93%;
+    --secondary: 224 100% 94%;
+    --secondary-foreground: 226 50% 24%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 233 10% 82%;
+    --input: 233 10% 82%;
+    --ring: 226 70% 55%;
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 240 6% 7%;
+    --foreground: 220 9% 94%;
+    --card: 220 6% 10%;
+    --card-foreground: 220 9% 94%;
+    --popover: 220 6% 10%;
+    --popover-foreground: 220 9% 94%;
+    --muted: 214 7% 19%;
+    --muted-foreground: 220 9% 94%;
+    --accent: 225 6% 14%;
+    --accent-foreground: 220 9% 94%;
+    --primary: 226 70% 55%;
+    --primary-foreground: 0 0% 93%;
+    --secondary: 225 54% 25%;
+    --secondary-foreground: 224 100% 92%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 213 8% 28%;
+    --input: 213 8% 28%;
+    --ring: 226 70% 55%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
+:root {
+  @apply scroll-smooth font-sans antialiased;
   font-synthesis: none;
 }
