@@ -12,15 +12,15 @@ type ButtonLinkProps = LinkProps & VariantProps<typeof buttonVariants>;
 const Link = ({ ...props }: LinkProps) => <Root {...props} />;
 
 const ButtonLink = ({
-  className,
-  variant,
-  size,
-  ...props
+	className,
+	variant,
+	size,
+	...props
 }: ButtonLinkProps) => (
-  <Link
-    className={cn(buttonVariants({ variant, size }), className)}
-    {...props}
-  />
+	<Link
+		className={cn(buttonVariants({ variant, size }), className)}
+		{...props}
+	/>
 );
 
 export { Link, ButtonLink };

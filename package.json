@@ -1,48 +1,39 @@
 {
-  "name": "hand-break",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "next dev --turbo",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "next": "15.0.0-rc.0",
-    "react": "19.0.0-rc-f994737d14-20240522",
-    "react-aria-components": "^1.2.1",
-    "react-dom": "19.0.0-rc-f994737d14-20240522",
-    "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.0.0-alpha.16",
-    "@types/node": "^20.14.8",
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "15.0.0-rc.0",
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^4.0.0-alpha.16",
-    "typescript": "^5.5.2"
-  },
-  "overrides": {
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc"
-  },
-  "prettier": {
-    "tailwindFunctions": [
-      "cn",
-      "cva"
-    ],
-    "plugins": [
-      "prettier-plugin-tailwindcss"
-    ]
-  }
+	"name": "hand-break",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "next dev --turbo",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"next": "15.0.0-rc.0",
+		"react": "19.0.0-rc-f994737d14-20240522",
+		"react-aria-components": "^1.2.1",
+		"react-dom": "19.0.0-rc-f994737d14-20240522",
+		"tailwind-merge": "^2.3.0",
+		"tailwindcss-animate": "^1.0.7"
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss": "^4.0.0-alpha.16",
+		"@types/node": "^20.14.8",
+		"@types/react": "npm:types-react@rc",
+		"@types/react-dom": "npm:types-react-dom@rc",
+		"eslint": "^8.57.0",
+		"eslint-config-next": "15.0.0-rc.0",
+		"prettier": "^3.3.2",
+		"prettier-plugin-tailwindcss": "^0.6.5",
+		"tailwindcss": "^4.0.0-alpha.16",
+		"typescript": "^5.5.2"
+	},
+	"overrides": {
+		"@types/react": "npm:types-react@rc",
+		"@types/react-dom": "npm:types-react-dom@rc"
+	}
 }
