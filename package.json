@@ -22,15 +22,15 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0-alpha.16",
-    "@types/node": "^20",
+    "@types/node": "^20.14.8",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
-    "eslint": "^8",
+    "eslint": "^8.57.0",
     "eslint-config-next": "15.0.0-rc.0",
-    "prettier": "^3.3.1",
-    "prettier-plugin-tailwindcss": "^0.6.2",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^4.0.0-alpha.16",
-    "typescript": "^5.5.1-rc"
+    "typescript": "^5.5.2"
   },
   "overrides": {
     "@types/react": "npm:types-react@rc",
